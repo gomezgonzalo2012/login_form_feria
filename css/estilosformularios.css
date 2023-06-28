@@ -1,0 +1,58 @@
+*{
+    display: block;
+}
+.input{
+    width: 200px;
+    padding: 5pt 3pt;
+    margin-bottom: 5pt;
+    margin-top: 2pt;
+    border-color: blue;
+    border-radius: 5pt;
+}
+.input[type="password"]{
+    color: green ;
+}
+.input-moderno{
+    border: none; /*quita los bordes*/
+    border-bottom:1px solid rgb(233, 230, 230); /*solo agrega el borde de abajo*/
+    outline:none; /*quita el marco al ubicarse en el formulario*/
+    padding: 3pt;
+    margin-top: 2pt;
+    color: rgb(125, 12, 238); /*letras de color*/
+}
+.input-moderno::placeholder{
+    color: rgb(216, 130, 238); /*cambia el color del placeholder*/
+}
+.input-moderno:focus{
+    border-bottom: 1px solid grey;/*el borde inferior cambia al hacer foco o colocar el cursos para escribir*/
+}
+
+.input-fondo{
+    background-color: blueviolet;
+    border: none;
+    outline: none;
+    border-radius: 3pt;
+    padding: 3pt;
+    color: rgb(224, 222, 222);
+    margin-top: 5pt;
+}
+.input-fondo::placeholder{
+    color: whitesmoke;
+}
+.input-search{
+    border:none;
+    margin-top: 5pt;
+    padding: 3pt;
+    background-color: #ddd;
+    border-radius: 4px;
+    background-image: url("../img/descarga.jpg");
+    background-position:top;
+}
+select{
+    margin-top: 5pt;
+    width: 40%; /*ocupa el 40% del largo inclusive al cambiar el tamaño*/
+    padding: 5pt;
+    background-color: rgb(234, 234, 245);
+    border-radius: 2pt;
+
+}

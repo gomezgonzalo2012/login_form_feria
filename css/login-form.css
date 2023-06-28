@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+*{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;/*eje principal de los contenidos Y (columna)*/
+    align-items: center; 
+    justify-content: center;
+    gap:30px;
+    width: 450px;
+    margin:auto;
+}
+.buttons{
+    align-self: center;/*pone a la izquierda el boton "registrarse con google"*/
+    display: flex;
+    gap: 30px; /*espacio entre botones*/
+}
+.google-btn{
+    background-color: #1A73E8; /*color obtenido de la extension de google"colorpick eyedropper"*/
+    color: white;
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+    display: flex;
+    align-items: center; /*centra los elementos horizontalmente  respecto al contenedor  (google-btn)*/
+    padding: 3px;
+    
+}
+
+.google-btn picture{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* cursor: pointer; podria ir aca tmb*/ 
+}
+.google-btn picture img{
+    width: 30px;
+    height: 30px;
+
+}
+.google-btn:hover{
+    opacity: 0.7 ;
+    cursor: pointer;
+}
+.google-btn span{
+    color: white;
+    padding: 15px; /*no se distingue por que es el padding de lo que esta fuera delbotón*/
+    font-weight: 500;/*grosor de la lettra*/
+}
+
+.twitter-btn{
+    color: #ccc;
+    background-color: #eee;
+    border:none;
+    border-radius:5px;
+    width: 40px;
+}
+
+.twitter-btn:hover{
+    cursor: pointer;
+    background-color: #ddd;
+}
+.twitter-btn picture img {
+    width: 20px;
+    height: 20px;
+}
+
+.separator{
+    display: flex;
+    width: 100%;
+    gap:15px;
+    color: #5f5f5f; /*color de la letra del medio*/
+}
+.separator hr{ /*el separrador es como una caja entonces aplicamos filtros de borde*/
+    flex-grow: 1; /*largo de la pantalla que ocupa*/
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.section-inputs{
+    display: flex;
+    gap:10px;
+    width: 100%;
+}
+label{
+    display: flex; /**/
+    flex-direction: column;/*hace que se muestre en columna los label*/
+    gap:5px; /*espacio entre elementos*/
+}
+
+
+label span {
+    font-weight: 500; /*cada rotulo: name, username, email, password*/
+}
+/*estilos de los cuadros a rellenar en el formulario*/
+label input{
+    background-color: #f3f3f3;
+    border: none;
+    border-radius: 2pt;
+    padding: 8px 20px;
+    outline: none;
+    font-size: 14pt;
+    
+}
+.section-inputs label input{
+width: 80%; /* los inputs ocuparan solo el 80% del contenedor*/
+}
+label input:hover{ /* se aplicaran al pasar el cursor por encima*/
+    background-color: white;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0 0 4px #8088fc9a;/*sombra alrededor de cada cuadro de input*/
+}
+
+label input:focus{ /* se aplicaran al hacer click*/
+    background-color: white;
+    border: 1px solid #f3f3f3;
+    box-shadow: 0 0 4px #8088fc9a;/*sombra alrededor de cada cuadro de input*/
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* alarga los elementos*/
+    gap:20px;
+}
+
+
+.checkbox-label{ /* posicionando los elementos  del container checkbox-label correctamente*/
+    display: flex;
+    flex-direction: row;
+}
+.checkbox-label input[type="checkbox"] {
+    width: 20px;
+    
+}
+.checkbox-label span{
+    font-weight: 400;
+}
+.submit-btn{/* boton crer cuenta*/
+    background-color: rgb(216, 76, 99);
+    color: white;
+    border:none;
+    border-radius: 2pt;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.submit-btn:hover{
+    opacity: 75%;
+} 
